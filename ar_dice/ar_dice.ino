@@ -32,19 +32,11 @@ void loop() {
     int pin2 = digitalRead(PIN_FOR_DIE_2);
 
     if (pin1 == LOW) {
-        delay(100);
-        for (int i=0; i<7; i++) {
-            rollDie(die1);
-            delay(200);
-        }
+        rollDie(die1);
     }
 
     if (pin2 == LOW) {
-        delay(100);
-        for (int i=0; i<7; i++) {
-            rollDie(die2);
-            delay(200);
-        }
+        rollDie(die2);
     }
 
 }
@@ -52,11 +44,16 @@ void loop() {
 
 void rollDie(Adafruit_8x8matrix die) {
 
-    die.setTextSize(1);
-    die.clear();
-    die.setTextColor(LED_ON);
-    die.setCursor(2,0);
-    die.print(random(1, 7));
-    die.writeDisplay();
+    delay(100);
+
+    for (int i=0; i<7; i++) {
+        die.setTextSize(1);
+        die.clear();
+        die.setTextColor(LED_ON);
+        die.setCursor(2,0);
+        die.print(random(1, 7));
+        die.writeDisplay();
+        delay(200);
+    }
 
 }
