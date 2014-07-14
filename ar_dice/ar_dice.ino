@@ -46,14 +46,14 @@ void rollDie(Adafruit_8x8matrix die) {
 
     delay(100);
 
-    for (int i=0; i<7; i++) {
+    for (int i=0; i<20; i++) {
         die.setTextSize(1);
         die.clear();
         die.setTextColor(LED_ON);
         die.setCursor(2,0);
         die.print(random(1, 7));
         die.writeDisplay();
-        delay(200);
+        delay(50);
     }
 
 }
