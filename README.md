@@ -2,7 +2,7 @@
 
 ### Parts
 
-These are the parts I used to build this project. Everything except the LED matrices should be pretty interchangeable. As long as your Arduino supports [I2C](http://en.wikipedia.org/wiki/I²C) (almost all of them do)
+These are the parts I used to build this project.
 
 * [Full Sized Breadboard](https://www.adafruit.com/products/239) (x1) - This has plenty of room to accomodate the rest of the parts listed below.
 * [Breadboarding Wires](https://www.adafruit.com/products/153) - It's always good to have a bunch of these laying around. How else are you going to connect things?
