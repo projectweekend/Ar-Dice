@@ -1,5 +1,3 @@
-An Arduino sketch for electronic dice using two LED matrices &amp; buttons
-
 ![Arduino and LED matrices](http://i.imgur.com/kXZSyv4.jpg)
 
 ### Parts
